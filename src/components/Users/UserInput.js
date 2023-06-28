@@ -1,13 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 const UserInput = () => {
   return (
     <div>
       <Card>
-        <label>Enter Name</label>
-        <input type="string"></input>
-        <input type="string"></input>
+        <Card.Header>Enter Details</Card.Header>
+        <Card.Body>
+          <input type="string" placeholder="UserName" />
+          <input type="number" placeholder="Age" />
+          <Button variant="primary">Go </Button>
+        </Card.Body>
       </Card>
     </div>
   );
